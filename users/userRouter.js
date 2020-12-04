@@ -96,7 +96,7 @@ function validateUserId(req, res, next) {
     })
     .catch((err) => {
       console.log(err.message);
-      res.status(500).json({ error: "error retrieving the user" });
+      res.status(500).json({ message: "error retrieving the user" });
     });
 }
 
