@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
+const User = require("./userDb");
+
 router.post("/", (req, res) => {});
 
 router.post("/:id/posts", (req, res) => {});
@@ -15,7 +17,7 @@ router.delete("/:id", (req, res) => {});
 
 router.put("/:id", (req, res) => {});
 
-//custom middleware
+// custom middleware
 
 function validateUserId(req, res, next) {}
 
